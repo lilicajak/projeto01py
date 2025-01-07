@@ -52,7 +52,11 @@ class SistemaEscolar:
 
     def cadastrar_aluno(este, nome, idade, matricula):
         aluno = Aluno(nome, idade, matricula)
-        este.alunos.append(aluno)
+        # verificar se o aluno inserido tem uma  unica
+        for aluno in este.aluno:
+         if aluno.append(aluno):
+        
+            print(f"inexistente: matricula {matricula} matricula em uso ")
 
     def cadastrar_professor(este, nome, area_ensino, matricula):
         professor = Professor(nome, area_ensino, matricula)
